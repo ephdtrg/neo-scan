@@ -2,10 +2,10 @@ use Mix.Config
 
 config :neoscan, Neoscan.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "${DB_USERNAME}",
-  password: "${DB_PASSWORD}",
-  database: "${DB_DATABASE}",
-  hostname: "${DB_HOSTNAME}",
+  username: "postgres",
+  password: "postgres",
+  database: "neoscan_dev",
+  hostname: "localhost",
   timeout: 60_000
 
 # import_config "prod.secret.exs"

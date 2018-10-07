@@ -15,14 +15,14 @@ use Mix.Config
 # which you typically run after static files are built.
 config :neoscan_web, NeoscanWeb.Endpoint,
   http: [
-    port: {:system, "PORT"},
+    port: 4000,
     compress: true
   ],
-  url: [
-    scheme: "https",
-    host: {:system, "HOST"},
-    port: 443
-  ],
+#  url: [
+#    scheme: "https",
+#    host: {:system, "HOST"},
+#    port: 443
+#  ],
   cache_static_manifest: "priv/static/cache_manifest.json",
   check_origin: false,
   server: true,
